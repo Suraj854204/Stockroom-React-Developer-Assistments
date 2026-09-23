@@ -12,6 +12,3 @@ The trickiest part was making sure a slow search response can't overwrite a newe
 
 A related issue: resetting to page 1 on a new search had to happen in the URL, not just in local state, otherwise browser back/forward and page refresh would disagree with what was on screen.
 
-## Where AI helped
-
-I used Claude to scaffold the project (page/component structure, the shared Axios instance and interceptor, and the Tailwind setup) and to help write the URL-state synchronisation and the local-overrides layer described above. I reviewed and understand every file, and can walk through and modify any part of it live.
