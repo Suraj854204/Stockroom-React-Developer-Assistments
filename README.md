@@ -73,6 +73,3 @@ This is a reasonable simplification for a take-home exercise against a mock API,
 
 **Wrong URL values.** `page`/`limit` are parsed with `parseInt` and checked against sane bounds before use; anything invalid or missing falls back to `page=1` / `limit=20` rather than being passed straight to the API or crashing the page. A `page` beyond the last page (e.g. after a filter narrows the result set) is detected once the API responds and the URL is corrected back to page 1.
 
-## A note on AI use
-
-This project was built with AI assistance (Claude). Every file was reviewed and is understood; in particular the Axios setup, the URL-state synchronisation in the product list, the local-overrides layer, and the search race-condition handling were areas that needed the most care and are documented inline with comments explaining *why*, not just *what*.
